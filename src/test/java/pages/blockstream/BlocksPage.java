@@ -35,6 +35,7 @@ public class BlocksPage {
     }
 
     public List<WebElement> getTransactionBoxesInputs(WebElement transactionBox) {
+
         wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(transactionBoxesInputs));
         return transactionBox.findElements(transactionBoxesInputs);
     }
